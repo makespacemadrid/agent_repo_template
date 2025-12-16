@@ -29,7 +29,14 @@
         "ms-vscode-remote.remote-containers",
         "ms-azuretools.vscode-docker",
         "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "GitHub.copilot-chat",
+        "openai.chatgpt",
+        "Anthropic.claude-code",
+        "google.geminicodeassist",
+        "sst-dev.opencode",
+        "Continue.continue",
+        "qwenlm.qwen-code-vscode-ide-companion",
+        "coder.coder-remote"
       ]
     }
   }
