@@ -12,7 +12,7 @@ Lee este archivo antes de modificar el repositorio. Para detalles complementario
 
 ## Configuración de VS Code y extensiones
 - Asegúrate de que las extensiones recomendadas en `.devcontainer/devcontainer.json` y `.vscode/extensions.json` se mantengan alineadas.
-- La lista debe incluir asistentes de IA de OpenAI, Anthropic, Google, Qwen, Continue, SST OpenCode y las extensiones de Docker, Dev Containers y Coder remoto.
+- La lista debe incluir asistentes de IA de OpenAI, Anthropic, Google, Qwen, Continue, SST OpenCode y las extensiones de Docker, Dev Containers y Coder remoto. Añade también herramientas de apoyo a Git como GitLens para facilitar la revisión del historial y trazabilidad de cambios.
 - Si el proyecto usa Docker o Docker Compose, aprovecha la instancia local para correr pruebas reconstruyendo la imagen cuando sea necesario.
 - Si el repositorio tiene GitHub Actions disponibles, utilízalas para compilar, ejecutar tests y distribuir imágenes cuando aplique.
 
