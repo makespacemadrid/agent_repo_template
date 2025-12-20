@@ -13,10 +13,8 @@ Plantilla minima para trabajar con VS Code, devcontainers y agentes de programac
 
 ## Trabajo con agentes de programacion
 - Dentro del contenedor se instalan extensiones de IA variadas (OpenAI, Anthropic, Google, Qwen, Continue y SST OpenCode) junto con Copilot y GitLens; habilitalas en VS Code para autocompletado, chat contextual y trazabilidad de Git.
-- El contenedor expone el socket de Docker, asi que puedes lanzar herramientas que requieran contenedores adicionales desde la terminal integrada.
 - Usa la terminal de VS Code dentro del contenedor para ejecutar tus comandos (node, pnpm, python, pip, etc).
 - Consulta `AGENTS.md` y `CLAUDE.md` para lineamientos de colaboracion entre agentes e incluye tu plan en `CURRENT_PLAN.md`; registra hallazgos en `FOUND_WHILE_WORKING.md`.
-- Si trabajas con Docker o Docker Compose, puedes reconstruir y probar imágenes usando la instancia local expuesta en el devcontainer.
 - Cuando existan flujos en GitHub Actions, apóyate en ellos para compilar, probar o distribuir imágenes en lugar de procesos manuales.
 
 ## Archivos de configuracion incluidos
