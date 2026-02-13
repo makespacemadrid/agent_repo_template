@@ -1,0 +1,69 @@
+# Taxonomía de documentos
+# Tier T5: crear cuando hay agentes especializados que necesitan contexto filtrado.
+#
+# Cada documento se etiqueta con:
+#   audience: [agent, human, shared]
+#   agent_access: ["*"] o lista de IDs de agente
+#   priority: high | medium | low
+#   summary: descripción de 1 línea
+
+documents:
+  - path: "AGENTS.md"
+    audience: [agent]
+    agent_access: ["*"]
+    priority: high
+    summary: "Entry point y reglas globales para agentes de código"
+
+  - path: "ROADMAP.md"
+    audience: [shared]
+    agent_access: ["*"]
+    priority: high
+    summary: "Backlog priorizado y foco actual del proyecto"
+
+  - path: "README.md"
+    audience: [human]
+    agent_access: []
+    priority: low
+    summary: "Overview del proyecto para humanos"
+
+  - path: "docs/GOVERNANCE.md"
+    audience: [agent]
+    agent_access: ["*"]
+    priority: medium
+    summary: "Jerarquía de docs, DoD, reglas de coordinación"
+
+  - path: "docs/API_CONTRACT.md"
+    audience: [shared]
+    agent_access: ["*"]
+    priority: high
+    summary: "Contratos API living document"
+
+  - path: "docs/WORKFLOWS.md"
+    audience: [shared]
+    agent_access: ["*"]
+    priority: medium
+    summary: "Flujos E2E canónicos con criterios de aceptación"
+
+  - path: "docs/KNOWN_GAPS.md"
+    audience: [agent]
+    agent_access: ["*"]
+    priority: medium
+    summary: "Deuda técnica y gaps activos"
+
+  - path: "docs/HANDOFF.md"
+    audience: [agent]
+    agent_access: ["*"]
+    priority: medium
+    summary: "Log de handoff entre sesiones de trabajo"
+
+  - path: "docs/RUNBOOK.md"
+    audience: [shared]
+    agent_access: ["*"]
+    priority: low
+    summary: "Comandos operacionales para build, test, deploy"
+
+  - path: "docs/ARCHITECTURE.md"
+    audience: [shared]
+    agent_access: ["*"]
+    priority: medium
+    summary: "Diseño del sistema y diagramas"

@@ -1,23 +1,33 @@
-# codex_repo_template
-Plantilla minima para trabajar con VS Code, devcontainers y agentes de programacion.
+# {{NOMBRE_PROYECTO}}
+
+<!-- Breve descripción del proyecto (1-3 líneas) -->
 
 ## Prerrequisitos
-- Docker ejecutandose localmente.
-- VS Code con la extension "Dev Containers" instalada.
-- Acceso a las extensiones recomendadas para IA, trabajo remoto y Git (Copilot, ChatGPT, Claude, Gemini, Qwen, Continue, OpenCode, Docker, Dev Containers, GitLens y Coder remoto).
 
-## Arranque rapido con devcontainer
-1) Abre la carpeta en VS Code.  
-2) Cuando se te pregunte, selecciona "Reopen in Container" (o `Dev Containers: Reopen in Container` desde la paleta).  
-3) Espera a que se construya el contenedor. Se instalan Node LTS + pnpm, Python 3.11 + pip, Git y Docker CLI (con acceso al socket del host).
+- Docker ejecutándose localmente
+- VS Code con la extensión "Dev Containers" instalada
 
-## Trabajo con agentes de programacion
-- Dentro del contenedor se instalan extensiones de IA variadas (OpenAI, Anthropic, Google, Qwen, Continue y SST OpenCode) junto con Copilot y GitLens; habilitalas en VS Code para autocompletado, chat contextual y trazabilidad de Git.
-- Usa la terminal de VS Code dentro del contenedor para ejecutar tus comandos (node, pnpm, python, pip, etc).
-- Consulta `AGENTS.md` y `CLAUDE.md` para lineamientos de colaboracion entre agentes e incluye tu plan en `CURRENT_PLAN.md`; registra hallazgos en `FOUND_WHILE_WORKING.md`.
-- Cuando existan flujos en GitHub Actions, apóyate en ellos para compilar, probar o distribuir imágenes en lugar de procesos manuales.
+## Arranque rápido
 
-## Archivos de configuracion incluidos
-- `.devcontainer/devcontainer.json` define la imagen base, caracteristicas (Node, Python, Git, Docker) y extensiones de VS Code (incluidas IA, Docker y GitLens).
-- `.vscode/extensions.json` recomienda extensiones para contenedores, Docker, Git y agentes de programacion.
-- `.vscode/settings.json` activa formato al guardar y perfila la terminal bash.
+1. Abre la carpeta en VS Code.
+2. Selecciona "Reopen in Container" (o `Dev Containers: Reopen in Container` desde la paleta).
+3. Espera a que se construya el contenedor. Incluye: Node LTS + pnpm, Python 3.11 + pip, Git, Docker CLI.
+
+## Trabajo con agentes de código
+
+Este repositorio está preparado para colaboración con agentes de programación (Claude, Codex, Copilot, etc.):
+
+- **`AGENTS.md`** — Fuente de verdad para todos los agentes. Lee este archivo primero.
+- **`CLAUDE.md`** — Instrucciones específicas para Claude Code.
+- **`ROADMAP.md`** — Backlog priorizado y foco actual.
+- **`docs/`** — Documentación operacional (contratos API, workflows, handoffs, gaps, governance).
+
+La estructura de `docs/` es progresiva: no necesitas todos los archivos desde el día 0. Consulta la tabla de tiers en `AGENTS.md` para saber cuándo crear cada documento.
+
+## Archivos de configuración
+
+| Archivo | Propósito |
+|---------|-----------|
+| `.devcontainer/devcontainer.json` | Imagen base, features (Node, Python, Git, Docker), extensiones VS Code |
+| `.vscode/extensions.json` | Extensiones recomendadas (sincronizadas con devcontainer) |
+| `.vscode/settings.json` | Format on save, terminal bash, final newlines |

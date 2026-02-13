@@ -1,0 +1,52 @@
+# === Contexto privado (NUNCA commitear) ===
+PRIVATE.md
+
+# === Secretos y credenciales ===
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+secrets/
+
+# === Dependencias ===
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+vendor/
+
+# === Build y artefactos ===
+dist/
+build/
+*.egg-info/
+.next/
+.nuxt/
+.output/
+
+# === IDE y editores ===
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === Docker ===
+docker-compose.override.yml
+
+# === Testing y coverage ===
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+.nyc_output/
+
+# === Logs ===
+*.log
+logs/

@@ -1,0 +1,43 @@
+# === Documentación y metadatos (no necesarios en imagen) ===
+*.md
+docs/
+LICENSE
+
+# === Git ===
+.git/
+.gitignore
+
+# === Contexto privado ===
+PRIVATE.md
+
+# === Secretos ===
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# === IDE y editores ===
+.vscode/
+.idea/
+.devcontainer/
+.cursor/
+.windsurf/
+
+# === Dependencias (se instalan en build) ===
+node_modules/
+__pycache__/
+.venv/
+venv/
+
+# === Testing ===
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+tests/
+
+# === Docker ===
+docker-compose*.yml
+Dockerfile*
